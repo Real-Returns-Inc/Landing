@@ -552,10 +552,13 @@ export function PrimaryFeatures() {
             Every feature you need to win. Try it for yourself.
           </h2>
           <p className="mt-2 text-lg text-gray-400">
-            Pocket was built for investors like you who play by their own rules
-            and aren’t going to let SEC regulations get in the way of their
-            dreams. If other investing tools are afraid to build it, Pocket has
-            it.
+          Real Returns is a comprehensive real estate investment tool 
+          that offers all the features you need to succeed in the residential
+           and commercial property markets. With its easy-to-use interface and
+            powerful analytics, you can quickly and confidently make informed 
+            investment decisions. Whether you're a seasoned investor or just starting out, 
+            Real Returns has everything you need to win. Try it for yourself and see the 
+            difference it can make in your real estate portfolio.
           </p>
         </div>
       </Container>

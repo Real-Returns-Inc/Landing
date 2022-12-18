@@ -16,7 +16,7 @@ import logoForbes from '@/images/logos/forbes.svg'
 import logoHuffpost from '@/images/logos/huffpost.svg'
 import logoTechcrunch from '@/images/logos/techcrunch.svg'
 import logoWired from '@/images/logos/wired.svg'
-import dummyscreenshot from '@/images/yourscreenshot.png'
+import homeScrenshot from '@/images/home.jpeg'
 
 function BackgroundIllustration(props) {
   let id = useId()
@@ -258,7 +258,7 @@ function AppDemo() {
   return (
     <AppScreen>
       <div style={{width: '100%', height: '100%', position: 'relative'}}>
-      <Image src={dummyscreenshot} layout='fill'
+      <Image src={homeScrenshot} layout='fill'
     objectFit='contain' /></div>
     </AppScreen>
   )
