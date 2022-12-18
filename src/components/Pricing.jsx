@@ -14,7 +14,7 @@ const plans = [
     description:
       'Maximize your residential real estate investments.',
     button: {
-      label: 'Subscribe Now',
+      label: 'Subscribe',
       href: '/register',
     },
     features: [
