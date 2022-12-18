@@ -15,7 +15,7 @@ const plans = [
       'Maximize your residential real estate investments.',
     button: {
       label: 'Subscribe',
-      href: '/register',
+      href: 'https://roi.realreturns.ai',
     },
     features: [
       'Residential Analysis',
@@ -31,7 +31,7 @@ const plans = [
       'Unlock the full potential of your commercial real estate portfolio.',
     button: {
       label: 'Subscribe',
-      href: '/register',
+      href: 'https://roi.realreturns.ai',
     },
     features: [
       'DSCR Analysis',
@@ -48,7 +48,7 @@ const plans = [
       'Take your real estate investments to the next level.',
     button: {
       label: 'Subscribe',
-      href: '/register',
+      href: 'https://roi.realreturns.ai',
     },
     features: [
       'Residential Analysis',
