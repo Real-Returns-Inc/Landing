@@ -5,55 +5,38 @@ import { Container } from '@/components/Container'
 const faqs = [
   [
     {
-      question: 'How do I know the tips are good?',
-      answer:
-        'Our whole business depends on our tips being good, so it’s in our best interest that they are. The results of our customers speak for themselves, just trust us.',
-    },
-    {
-      question: 'Isn’t this insider trading?',
-      answer:
-        'Yes exactly. But at scale! Historically you could only make insider trades with knowledge from your direct network. Pocket brings you insider trading tips from people you don’t even know.',
-    },
-    {
-      question: 'But isn’t insider trading illegal?',
-      answer:
-        'Here’s the thing: you’re the one doing the insider trading, not us. We’re just giving you the tips and some tools to make trades. We’re not doing anything wrong here.',
-    },
+      question: "What type of properties does Real Returns support?",
+      answer: "Real Returns supports both residential and commercial properties, providing comprehensive market analysis and personalized investment recommendations for both types of investments."
+      },
+      {
+      question: "How does Real Returns determine property values and rental amounts?",
+      answer: "Real Returns uses advanced algorithms and integration with leading real estate market data sources to accurately determine property values and rental amounts in real-time, helping you make informed investment decisions."
+      },
+      {
+      question: "Is Real Returns only available in certain locations?",
+      answer: "Real Returns is available in most locations worldwide, allowing you to access the platform no matter where you are."
+      },
   ],
   [
     {
-      question: 'Do the people giving you tips realize what they are doing?',
-      answer:
-        'Again I would argue this isn’t really our responsibility. People make their own choices. If they don’t research the consequences that’s on them, not on us.',
-    },
-    {
-      question: 'Where is Pocket based?',
-      answer:
-        'Let’s just say it’s not somewhere where the SEC is going to find us.',
-    },
-    {
-      question: 'Is there any age limit to trading on Pocket?',
-      answer:
-        'For our free plan, the age limit is based on the minimum age to trade in your country of residence. Our VIP plan uses advanced transaction anonymization though, so you can use that plan even if you’re 9 years old. Or a dog.',
-    },
+      question: "Can I track and manage multiple properties with Real Returns?",
+      answer: "Yes, Real Returns allows you to track and manage multiple properties in a single location, streamlining your real estate portfolio management."
+      },
+      {
+      question: "Is there a limit to the number of properties I can track with Real Returns?",
+      answer: "There is no limit to the number of properties you can track with Real Returns, giving you the ability to grow your portfolio as much as you'd like."
+      },
+      {
+      question: "Is there a free trial available for Real Returns?",
+      answer: "Yes, Real Returns offers a free trial for users to try out the platform before committing to a subscription. This allows you to see the value that Real Returns can bring to your real estate investments before making a commitment."
+      },
   ],
   [
     {
-      question: 'How did you get this on the App Store?',
-      answer:
-        'Honestly we were surprised too, but eventually we found out that the app reviewer found the app so compelling they approved it just so they could use it themselves.',
-    },
-    {
-      question: 'How do I explain the money I withdraw from Pocket to the IRS?',
-      answer:
-        'This feels like one-hundred percent a you problem. Pocket is not responsible in any way for your tax returns.',
-    },
-    {
-      question: 'How do I become an insider?',
-      answer:
-        'Contact us with some details about your industry and the type of access you have to apply for an insider account. Once approved, we’ll send you a guide on collecting insider information without being detected at work.',
-    },
-  ],
+      question: "Are there any long-term contracts required for Real Returns?",
+      answer: "No, Real Returns offers flexible subscription plans with no long-term contracts required. You can easily cancel or upgrade your plan at any time, allowing you to adjust your subscription to fit your changing needs."
+      }
+  ]
 ]
 
 export function Faqs() {
@@ -67,15 +50,15 @@ export function Faqs() {
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2
             id="faqs-title"
-            className="text-3xl font-medium tracking-tight text-gray-900"
+            className="text-3xl font-medium tracking-tight text-gray-100"
           >
             Frequently asked questions
           </h2>
-          <p className="mt-2 text-lg text-gray-600">
+          <p className="mt-2 text-lg text-gray-300">
             If you have anything else you want to ask,{' '}
             <Link
-              href="mailto:info@example.com"
-              className="text-gray-900 underline"
+              href="mailto:info@realreturns.ai"
+              className="text-gray-200 underline"
             >
               reach out to us
             </Link>
@@ -91,10 +74,10 @@ export function Faqs() {
               <ul role="list" className="space-y-10">
                 {column.map((faq, faqIndex) => (
                   <li key={faqIndex}>
-                    <h3 className="text-lg font-semibold leading-6 text-gray-900">
+                    <h3 className="text-lg font-semibold leading-6 text-gray-200">
                       {faq.question}
                     </h3>
-                    <p className="mt-4 text-sm text-gray-700">{faq.answer}</p>
+                    <p className="mt-4 text-sm text-gray-300">{faq.answer}</p>
                   </li>
                 ))}
               </ul>

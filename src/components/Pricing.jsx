@@ -8,60 +8,54 @@ import { Logomark } from '@/components/Logo'
 
 const plans = [
   {
-    name: 'Starter',
+    name: 'Residential',
     featured: false,
-    price: { Monthly: '$0', Annually: '$0' },
+    price: { Monthly: '$35', Annually: '$420' },
     description:
-      'You’re new to investing but want to do it right. Get started for free.',
+      'Maximize your residential real estate investments.',
     button: {
       label: 'Get started for free',
       href: '/register',
     },
     features: [
-      'Commission-free trading',
-      'Multi-layered encryption',
-      'One tip every day',
-      'Invest up to $1,500 each month',
+      'Residential Analysis',
+      '30 Residential Reports',
     ],
     logomarkClassName: 'fill-gray-300',
   },
   {
-    name: 'Investor',
+    name: 'Commercial',
     featured: false,
-    price: { Monthly: '$7', Annually: '$70' },
+    price: { Monthly: '$55', Annually: '$660' },
     description:
-      'You’ve been investing for a while. Invest more and grow your wealth faster.',
+      'Unlock the full potential of your commercial real estate portfolio.',
     button: {
       label: 'Subscribe',
       href: '/register',
     },
     features: [
-      'Commission-free trading',
-      'Multi-layered encryption',
-      'One tip every hour',
-      'Invest up to $15,000 each month',
-      'Basic transaction anonymization',
+      'DSCR Analysis',
+      'ROI Analysis',
+      '30 Reports Each',
     ],
     logomarkClassName: 'fill-gray-500',
   },
   {
     name: 'VIP',
     featured: true,
-    price: { Monthly: '$199', Annually: '$1,990' },
+    price: { Monthly: '$75', Annually: '$900' },
     description:
-      'You’ve got a huge amount of assets but it’s not enough. To the moon.',
+      'Take your real estate investments to the next level.',
     button: {
       label: 'Subscribe',
       href: '/register',
     },
     features: [
-      'Commission-free trading',
-      'Multi-layered encryption',
-      'Real-time tip notifications',
-      'No investment limits',
-      'Advanced transaction anonymization',
-      'Automated tax-loss harvesting',
-    ],
+      'Residential Analysis',
+      'DSCR Analysis',
+      'ROI Analysis',
+      'Unlimited Reports'
+        ],
     logomarkClassName: 'fill-cyan-500',
   },
 ]
@@ -101,7 +95,7 @@ function Plan({
     <section
       className={clsx(
         'flex flex-col overflow-hidden rounded-3xl p-6 shadow-lg shadow-gray-900/5',
-        featured ? 'order-first bg-gray-900 lg:order-none' : 'bg-white'
+        featured ? 'order-first bg-gray-800 lg:order-none' : 'bg-white'
       )}
     >
       <h3
@@ -196,19 +190,20 @@ export function Pricing() {
     <section
       id="pricing"
       aria-labelledby="pricing-title"
-      className="border-t border-gray-200 bg-gray-100 py-20 sm:py-32"
+      className="border-t border-gray-200 bg-gray-900 py-20 sm:py-32"
     >
       <Container>
         <div className="mx-auto max-w-2xl text-center">
           <h2
             id="pricing-title"
-            className="text-3xl font-medium tracking-tight text-gray-900"
+            className="text-3xl font-medium tracking-tight text-white"
           >
-            Flat pricing, no management fees.
+            Invest in Your Future.
           </h2>
-          <p className="mt-2 text-lg text-gray-600">
-            Whether you’re one person trying to get ahead or a big firm trying
-            to take over the world, we’ve got a plan for you.
+          <p className="mt-2 text-lg text-gray-300">
+          Invest in your financial future with Real Returns. 
+          With our flexible pricing plans, you can choose the option that works best 
+          for you and start maximizing your real estate investments today.
           </p>
         </div>
 
@@ -224,7 +219,7 @@ export function Pricing() {
                   key={period}
                   value={period}
                   className={clsx(
-                    'cursor-pointer border border-gray-300 py-[calc(theme(spacing.2)-1px)] px-[calc(theme(spacing.3)-1px)] text-sm text-gray-700 outline-2 outline-offset-2 transition-colors hover:border-gray-400',
+                    'cursor-pointer border border-gray-300 py-[calc(theme(spacing.2)-1px)] px-[calc(theme(spacing.3)-1px)] text-sm text-gray-400 outline-2 outline-offset-2 transition-colors hover:border-gray-400',
                     period === 'Monthly'
                       ? 'rounded-l-lg'
                       : '-ml-px rounded-r-lg'

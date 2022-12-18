@@ -37,7 +37,7 @@ function MobileNavLink({ children, ...props }) {
   return (
     <Popover.Button
       as={Link}
-      className="block text-base leading-7 tracking-tight text-gray-700"
+      className="block text-base leading-7 tracking-tight text-gray-300"
       {...props}
     >
       {children}
@@ -122,11 +122,8 @@ export function Header() {
                 </>
               )}
             </Popover>
-            <Button href="/login" variant="outline" className="hidden lg:block">
-              Log in
-            </Button>
             <Button href="#" className="hidden lg:block">
-              Download
+              Get Started
             </Button>
           </div>
         </Container>

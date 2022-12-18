@@ -4,39 +4,39 @@ import { Container } from '@/components/Container'
 
 const features = [
   {
-    name: 'Invest any amount',
+    name: 'Invest any Market Analysis',
     description:
-      'Whether it’s $1 or $1,000,000, we can put your money to work for you.',
+      'Gain insight into the real estate market with comprehensive analysis for residential and commercial properties.',
     icon: DeviceArrowIcon,
   },
   {
-    name: 'Build a balanced portfolio',
+    name: 'Property Information',
     description:
-      'Invest in different industries to find the most opportunities to win huge.',
+      'Access detailed information on your properties, including total area, tax value, and more.',
     icon: DeviceCardsIcon,
   },
   {
-    name: 'Trade in real-time',
+    name: 'Easy-to-Use Interface',
     description:
-      'Get insider tips on big stock moves and act on them within seconds.',
+      'Easily manage your investments with our user-friendly interface and expert support team.',
     icon: DeviceClockIcon,
   },
   {
-    name: 'Profit from your network',
+    name: 'Multiple Property Tracking',
     description:
-      'Invite new insiders to get tips faster and beat even other Pocket users.',
+      'Keep track of all your properties in one place with our multiple property tracking feature.',
     icon: DeviceListIcon,
   },
   {
-    name: 'Encrypted and anonymized',
+    name: 'Advanced Analysis Tools',
     description:
-      'Cutting-edge security technology that even the NSA doesn’t know about keeps you hidden.',
+      'Optimize your real estate portfolio with advanced analysis tools and expert insights.',
     icon: DeviceLockIcon,
   },
   {
-    name: 'Portfolio tracking',
+    name: 'Reliable Market Data',
     description:
-      'Watch your investments grow exponentially, leaving other investors in the dust.',
+      'Make informed decisions with access to reliable market data from leading sources.',
     icon: DeviceChartIcon,
   },
 ]
@@ -195,12 +195,14 @@ export function SecondaryFeatures() {
     >
       <Container>
         <div className="mx-auto max-w-2xl sm:text-center">
-          <h2 className="text-3xl font-medium tracking-tight text-gray-900">
-            Now is the time to build your portfolio.
+          <h2 className="text-3xl font-medium tracking-tight text-gray-50">
+          Unleash the Potential of Your Real Estate Portfolio.
           </h2>
-          <p className="mt-2 text-lg text-gray-600">
-            With typical market returns, you have to start young to secure your
-            future. With Pocket, it’s never too late to build your nest egg.
+          <p className="mt-2 text-lg text-gray-200">
+          Discover the powerful features of Real Returns and unlock the full potential of
+           your real estate portfolio. Our platform has everything you need to make informed decisions and achieve
+            financial success. Plus, with our easy-to-use interface and expert support team,
+             you'll have everything you need to take control of your real estate investments and maximize your returns.
           </p>
         </div>
         <ul
@@ -210,13 +212,13 @@ export function SecondaryFeatures() {
           {features.map((feature) => (
             <li
               key={feature.name}
-              className="rounded-2xl border border-gray-200 p-8"
+              className="rounded-2xl border border-gray-400 p-8 bg-gray-900"
             >
               <feature.icon className="h-8 w-8" />
-              <h3 className="mt-6 font-semibold text-gray-900">
+              <h3 className="mt-6 font-semibold text-xl text-gray-200">
                 {feature.name}
               </h3>
-              <p className="mt-2 text-gray-700">{feature.description}</p>
+              <p className="mt-2 text-gray-300 text-lg">{feature.description}</p>
             </li>
           ))}
         </ul>

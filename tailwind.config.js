@@ -34,7 +34,7 @@ module.exports = {
         '5xl': '2.5rem',
       },
       colors: ({ colors }) => ({
-        gray: colors.neutral,
+        gray: colors.stone,
       }),
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],

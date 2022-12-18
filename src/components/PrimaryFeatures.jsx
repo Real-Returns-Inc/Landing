@@ -24,23 +24,23 @@ const MotionAppScreenBody = motion(AppScreen.Body)
 
 const features = [
   {
-    name: 'Invite friends for better returns',
+    name: 'Accurate property data',
     description:
-      'For every friend you invite to Pocket, you get insider notifications 5 seconds sooner. And it’s 10 seconds if you invite an insider.',
+      ' Real Returns uses advanced technology to automatically fetch accurate information about a property.',
     icon: DeviceUserIcon,
     screen: InviteScreen,
   },
   {
-    name: 'Notifications on stock dips',
+    name: 'Flexible plans',
     description:
-      'Get a push notification every time we find out something that’s going to lower the share price on your holdings so you can sell before the information hits the public markets.',
+      'Our plans cater to both residential and commercial property investors.',
     icon: DeviceNotificationIcon,
     screen: StocksScreen,
   },
   {
-    name: 'Invest what you want',
+    name: 'User-friendly interface',
     description:
-      'We hide your stock purchases behind thousands of anonymous trading accounts, so suspicious activity can never be traced back to you.',
+      'Real Returns makes it easy for users to understand potential returns on their real estate investment.',
     icon: DeviceTouchIcon,
     screen: InvestScreen,
   },

@@ -133,20 +133,20 @@ function Review({ title, body, author, rating, className, ...props }) {
   return (
     <figure
       className={clsx(
-        'animate-fade-in rounded-3xl bg-white p-6 opacity-0 shadow-md shadow-gray-900/5',
+        'animate-fade-in rounded-3xl bg-gray-500 p-6 opacity-0 shadow-md shadow-gray-900/5',
         className
       )}
       style={{ animationDelay }}
       {...props}
     >
-      <blockquote className="text-gray-900">
+      <blockquote className="text-gray-300">
         <StarRating rating={rating} />
         <p className="mt-4 text-lg font-semibold leading-6 before:content-['“'] after:content-['”']">
           {title}
         </p>
         <p className="mt-3 text-base leading-7">{body}</p>
       </blockquote>
-      <figcaption className="mt-3 text-sm text-gray-600 before:content-['–_']">
+      <figcaption className="mt-3 text-sm text-gray-100 before:content-['–_']">
         {author}
       </figcaption>
     </figure>
@@ -244,8 +244,8 @@ function ReviewGrid() {
           />
         </>
       )}
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-gray-50" />
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-gray-50" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-gray-700" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-gray-700" />
     </div>
   )
 }
@@ -260,12 +260,12 @@ export function Reviews() {
       <Container>
         <h2
           id="reviews-title"
-          className="text-3xl font-medium tracking-tight text-gray-900 sm:text-center"
+          className="text-3xl font-medium tracking-tight text-gray-50 sm:text-center"
         >
-          Everyone is changing their life with Pocket.
+          Real Results from Real Customers.
         </h2>
-        <p className="mt-2 text-lg text-gray-600 sm:text-center">
-          Thousands of people have doubled their net-worth in the last 30 days.
+        <p className="mt-2 text-lg text-gray-200 sm:text-center">
+        Real Returns delivers real results for real estate investors. Hear from our satisfied customers and see how our platform has helped them achieve financial success..
         </p>
         <ReviewGrid />
       </Container>
