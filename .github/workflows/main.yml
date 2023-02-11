@@ -1,4 +1,4 @@
-name: Deploy2Box
+name: Deploy2GH
 
 on:
   push:
@@ -19,13 +19,10 @@ jobs:
           node-version: 18.x
       - run: npm install
       - run: npm run build
+      - run: touch out/.nojekyll
       
-      - name: Publish
-        uses: nogsantos/scp-deploy@master
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.4.0
         with:
-          src: ./out/*
-          host: ${{ secrets.SSH_HOST }}
-          remote: ${{ secrets.SSH_DIR }}
-          port: ${{ secrets.SSH_PORT }}
-          user: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_KEY }}
+          branch: gh-pages
+          folder: out
